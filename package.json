@@ -1,0 +1,16 @@
+
+{
+    "name": "flask-server",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "http://localhost:8000",
+    "scripts": {
+        "start": "react-scripts start",
+        "start-backend": "cd backend && env/bin/flask run --no-debugger", 
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      }
+    
+  }
+  
