@@ -27,7 +27,7 @@ class BlinkDetectorApp:
         (self.rStart, self.rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]
 
         self.detector = dlib.get_frontal_face_detector()
-        self.predictor = dlib.shape_predictor("https://drive.google.com/file/d/1N3hFvwwQ50THJ6MpyDeMASMOScm6V4W-/view?usp=drive_link")
+        self.predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
         self.socketio.on_event('connect', self.handle_connect)
         self.socketio.on_event('disconnect', self.handle_disconnect)
